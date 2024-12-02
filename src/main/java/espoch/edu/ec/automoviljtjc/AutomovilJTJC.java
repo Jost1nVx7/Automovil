@@ -4,6 +4,11 @@
 
 package espoch.edu.ec.automoviljtjc;
 
+import espoch.edu.ec.automoviljtjc.Caracteristicas.ColorAuto;
+import espoch.edu.ec.automoviljtjc.Caracteristicas.PropiedadesAuto;
+import espoch.edu.ec.automoviljtjc.Caracteristicas.TipoAutomovil;
+import espoch.edu.ec.automoviljtjc.Caracteristicas.TipoCombustible;
+
 /**
  *
  * @author Global Technology Ec
@@ -11,6 +16,18 @@ package espoch.edu.ec.automoviljtjc;
 public class AutomovilJTJC {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        PropiedadesAuto miAuto = new PropiedadesAuto();
+
+        miAuto.setMarca("Toyota");
+        miAuto.setModelo("Tundra 2023");
+        miAuto.setMotor(3.6);
+        miAuto.setTipoCombustible(TipoCombustible.GASOLINA);
+        miAuto.setTipoAutomovil(TipoAutomovil.CAMIONETA);
+        miAuto.setNumeroPuertas(4);
+        miAuto.setCantidadAsientos(5);
+        miAuto.setVelocidadMaxima(280);
+        miAuto.setColor(ColorAuto.NEGRO);
+        miAuto.mostrarAtributos();
+        miAuto.setVelocidadActual(100);
     }
 }
